@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.sendfile(path.join(__dirname,'index.html' ))
+    res.status(500)
   })
 
 app.listen(port, () => {
