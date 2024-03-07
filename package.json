@@ -1,0 +1,12 @@
+{
+  "name": "expressbasic",
+  "version": "1.0.0",
+  "description": "Here you will find all the basic APIs in ExpressJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mohnish",
+  "license": "ISC"
+}
