@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 3300
 
@@ -7,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.sendfile('index.html')
+    res.sendfile(path.join(__dirname,'index.html' ))
   })
 
 app.listen(port, () => {
