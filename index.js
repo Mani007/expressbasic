@@ -8,8 +8,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-    res.sendfile(path.join(__dirname,'index.html' ))
-    res.status(500)
+    //res.sendfile(path.join(__dirname,'index.html' ))
+    //res.status(500)
+    res.json({
+        first: true,
+        second: 25,
+        third: 'Hello World!'
+    })
   })
 
 app.listen(port, () => {
