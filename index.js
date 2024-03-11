@@ -4,6 +4,14 @@ const app = express()
 const port = 3300
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+const mymiddleware = (req,res,next) => {
+    console.log(req)
+    //next()
+}
+
+app.use(mymiddleware)
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
